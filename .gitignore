@@ -1,0 +1,23 @@
+# Ignore compiled/binary artifacts
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.lo
+*.la
+*.out
+*.app
+*.pdb
+*.rlib
+*.rmeta
+*.wasm
+*.bin
+*.class
+*.pyc
+*.pyo
+*.dSYM/
