@@ -130,8 +130,6 @@ async fn main() -> std::io::Result<()> {
             .route("/todos", web::post().to(add_todo))
             // 定义路由：POST /todos/{id}/toggle
             .route("/todos/{id}/toggle", web::post().to(toggle_todo))
-            // 静态资源服务：访问 / 会返回 static/index.html
-            .service(fs::Files::new("/", "static").index_file("index.html"))
     })
     // 绑定本地端口
     .bind("127.0.0.1:8080")?
